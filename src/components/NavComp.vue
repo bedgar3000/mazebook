@@ -1,39 +1,32 @@
 <template lang="">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <router-link to="/" class="nav-link active" aria-current="page">
-                            <span class="material-icons-round">home</span>
-                        </router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/about" class="nav-link">
-                            <span class="material-icons-round">info</span>
-                        </router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/posts" class="nav-link">
-                            <span class="material-icons-round">featured_play_list</span>
-                        </router-link>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container justify-content-evenly">
+            <router-link to="/" class="nav-link active" aria-current="page">
+                <span class="material-icons-round">home</span>
+            </router-link>
+            <router-link to="/about" class="nav-link">
+                <span class="material-icons-round">info</span>
+            </router-link>
+            <router-link to="/posts" class="nav-link">
+                <span class="material-icons-round">featured_play_list</span>
+            </router-link>
         </div>
     </nav>
 </template>
 
 <script>
     export default {
-        
+        name: "NavComp"
     }
 </script>
 
-<style lang="">
-    
+<style scoped>
+    .material-icons-round {
+        color: white;
+        font-size: 1.4em;
+        background-color: rgba(218, 218, 218, 0.158);
+        padding: 0.3em;
+        border-radius: 50%;
+        margin: 0.1em;
+    }
 </style>
